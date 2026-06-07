@@ -4,7 +4,8 @@
   "description": "cs465-fullstack Development with MEAN",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,12 @@
   },
   "homepage": "https://github.com/MatthewBush-21/cs465-fullstack#readme",
   "dependencies": {
+    "axios": "^1.17.0",
+    "cookie-parser": "^1.4.7",
     "express": "^5.2.1",
     "hbs": "^4.2.1",
-    "mongoose": "^9.6.3"
+    "http-errors": "^2.0.1",
+    "mongoose": "^9.6.3",
+    "morgan": "^1.11.0"
   }
 }
