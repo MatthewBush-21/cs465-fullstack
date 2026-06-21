@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Login</h1>
+  <p>{{ formError }}</p>
+  <form (submit)="onLoginSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" [(ngModel)]="credentials.name" name="name" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Email Address</label>
+      <input type="email" [(ngModel)]="credentials.email" name="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" [(ngModel)]="credentials.password" name="password" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign In!</button>
+  </form>
+</div>

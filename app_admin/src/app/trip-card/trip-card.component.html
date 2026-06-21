@@ -1,0 +1,15 @@
+<div class="card h-100">
+  <img [src]="'assets/images/' + trip.image" class="card-img-top" [alt]="trip.name">
+  <div class="card-body">
+    <h5 class="card-title">{{trip.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{trip.resort}}</h6>
+    <p class="card-text">{{trip.length}} only ${{trip.perPerson}} per person</p>
+    <div [innerHTML]="trip.description"></div>
+    
+    <div class="mt-3">
+      <button *ngIf="isLoggedIn()" (click)="editTrip(trip)" class="btn btn-info">
+        Edit Trip
+      </button>
+    </div>
+  </div>
+</div>
